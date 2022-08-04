@@ -1,9 +1,9 @@
 import React from 'react';
 
-function FavoritesPages() {
+function FavoritesPage() {
   return (
-      <div></div>
+      <div>Fav</div>
   );
 }
 
-export default FavoritesPages;
+export default FavoritesPage;
