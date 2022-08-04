@@ -48,7 +48,7 @@ function HomePage() {
             ))}
           </ul>}
 
-          <div className="container">
+          <div className="container mt-10">
             { isReposLoading && <p className='text-center'>Repos are loading...</p>}
             { repos?.map(repo => <RepoCard repo={repo} key={repo.id} />) }
           </div>
