@@ -4,7 +4,7 @@ import {useDebounce} from "../hooks/debounce";
 import RepoCard from "../components/RepoCard";
 
 function HomePage() {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('theShaper-I');
   const [dropdown, setDropdown] = useState(false);
   const debounced = useDebounce(search)
   const {isLoading, isError, data} = useSearchUsersQuery(debounced, {
@@ -25,6 +25,7 @@ function HomePage() {
   return (
       <div className='flex justify-center pt-10 mx-auto h-screen w-screen'>
         { isError && <p className='text-center text-red-600'>Something went wrong...</p> }
+        <br />
 
         <div className='relative w-[560px]'>
           <input
